@@ -1,7 +1,7 @@
 import * as express from 'express';
 
-import router from './router';
 import { Logger, APILogger } from './config/Logger';
+import router from './src/router';
 
 const app = express();
 const port = 3000;
