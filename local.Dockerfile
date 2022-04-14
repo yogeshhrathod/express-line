@@ -1,4 +1,5 @@
-FROM node:16.14.1
+FROM node:16
+
 
 WORKDIR /usr/src/app
 
@@ -14,8 +15,6 @@ COPY . .
 
 EXPOSE 3000
 
-#Build to project
-RUN npm run build
 
 # Run node server
 CMD npm run start
